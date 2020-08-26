@@ -1,4 +1,6 @@
 # Newsletter
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/mardous/Newsletter/blob/master/LICENSE)
+
 News application using the API from https://newsapi.org/
 
 API News Is JSON API for live news and blog articles from the media.
@@ -25,4 +27,3 @@ git@github.com:mardous/Newsletter.git
 
 Get your API key
 https://newsapi.org/register
-
