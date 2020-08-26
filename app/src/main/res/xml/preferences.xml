@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory
+        android:title="@string/preference_category_appearance">
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATESwitchPreference
+            android:title="@string/preference_dark_theme_title"
+            android:summary="@string/preference_dark_theme_summary"
+            android:defaultValue="false"
+            android:key="dark_theme"
+            app:iconSpaceReserved="false"/>
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEColorPreference
+            android:title="@string/preference_accent_color_title"
+            android:summary="@string/preference_accent_color_summary"
+            android:key="accent_color"
+            android:persistent="false"
+            app:iconSpaceReserved="false"/>
+
+    </com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory>
+
+    <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory
+        android:title="@string/preference_category_news">
+
+        <ve.msucre.noticias.preference.RegionPreference
+            android:title="@string/preference_region_title"
+            android:summary="@string/preference_region_summary"
+            android:key="region"
+            app:iconSpaceReserved="false"/>
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEListPreference
+            android:title="@string/preference_news_update_interval_title"
+            android:summary="@string/preference_news_update_interval_summary"
+            android:entries="@array/preference_news_update_interval_entries"
+            android:entryValues="@array/preference_news_update_interval_values"
+            android:defaultValue="every_five_hours"
+            android:key="news_update_interval"
+            app:iconSpaceReserved="false"/>
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATESwitchPreference
+            android:title="@string/preference_open_news_in_app_title"
+            android:summary="@string/preference_open_news_in_app_summary"
+            android:defaultValue="true"
+            android:key="open_news_in_app"
+            app:iconSpaceReserved="false"/>
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEListPreference
+            android:title="@string/preference_results_limit_title"
+            android:summary="@string/preference_results_limit_summary"
+            android:entries="@array/preference_results_limit_entries"
+            android:entryValues="@array/preference_results_limit_values"
+            android:defaultValue="25"
+            android:key="results_limit"
+            app:iconSpaceReserved="false"/>
+
+        <ve.msucre.noticias.preference.ExcludeDomainPreference
+            android:title="@string/preference_excluded_domains_title"
+            android:summary="@string/preference_excluded_domains_summary"
+            android:key="excluded_domains"
+            app:iconSpaceReserved="false"/>
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATESwitchPreference
+            android:title="@string/preference_always_load_from_cache_if_possible_title"
+            android:summary="@string/preference_always_load_from_cache_if_possible_summary"
+            android:defaultValue="false"
+            android:key="always_load_from_cache_if_possible"
+            app:iconSpaceReserved="false"/>
+
+    </com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory>
+
+    <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory
+        android:title="@string/preference_category_search">
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATESwitchPreference
+            android:title="@string/preference_search_on_text_changed_title"
+            android:summary="@string/preference_search_on_text_changed_summary"
+            android:defaultValue="false"
+            android:key="search_on_text_changed"
+            app:iconSpaceReserved="false"/>
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEListPreference
+            android:title="@string/preference_sort_search_result_by_title"
+            android:entries="@array/preference_sort_search_result_by_entries"
+            android:entryValues="@array/preference_sort_search_result_by_values"
+            android:defaultValue="publishedAt"
+            android:key="sort_search_result_by"
+            app:iconSpaceReserved="false"/>
+
+        <com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreference
+            android:title="@string/preference_delete_search_history_title"
+            android:key="delete_search_history"
+            app:iconSpaceReserved="false"/>
+
+    </com.kabouzeid.appthemehelper.common.prefs.supportv7.ATEPreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

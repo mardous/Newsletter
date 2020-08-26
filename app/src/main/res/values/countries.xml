@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="country_argentina">Argentina</string>
+    <string name="country_australia">Australia</string>
+    <string name="country_brazil">Brazil</string>
+    <string name="country_canada">Canada</string>
+    <string name="country_colombia">Colombia</string>
+    <string name="country_cuba">Cuba</string>
+    <string name="country_india">India</string>
+    <string name="country_italy">Italy</string>
+    <string name="country_mexico">Mexico</string>
+    <string name="country_spain">Spain</string>
+    <string name="country_united_kingdom">United Kingdom</string>
+    <string name="country_usa">United States</string>
+    <string name="country_venezuela">Venezuela</string>
+    <string name="country_unknown">Unknown country</string>
+</resources>

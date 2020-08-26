@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="toolbarPopupTheme" format="reference"/>
+    <attr name="searchItemBackground" format="reference"/>
+    <attr name="webBackgroundColor" format="color"/>
+</resources>

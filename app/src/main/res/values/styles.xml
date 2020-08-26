@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Base.AppTheme"/>
+
+    <style name="AppTheme.Light" parent="Base.AppTheme.Light"/>
+
+    <style name="Base.AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="colorPrimary">@color/md_grey_900</item>
+        <item name="colorPrimaryDark">@color/md_grey_900</item>
+        <item name="android:windowBackground">@color/md_grey_900</item>
+
+        <item name="md_dark_theme">true</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.MaterialComponents.BottomSheetDialog</item>
+        <item name="cardBackgroundColor">@color/md_grey_850</item>
+
+        <item name="toolbarPopupTheme">@style/ThemeOverlay.MaterialComponents</item>
+        <item name="searchItemBackground">@drawable/round_dark_selector</item>
+        <item name="webBackgroundColor">@color/md_grey_600</item>
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="Base.AppTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+
+        <item name="colorPrimary">@color/md_white_1000</item>
+        <item name="colorPrimaryDark">@color/md_grey_300</item>
+        <item name="android:windowBackground">@color/md_white_1000</item>
+
+        <item name="md_dark_theme">false</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.MaterialComponents.Light.BottomSheetDialog</item>
+        <item name="cardBackgroundColor">@color/md_white_1000</item>
+
+        <item name="toolbarPopupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
+        <item name="searchItemBackground">@drawable/round_light_selector</item>
+        <item name="webBackgroundColor">@color/md_white_1000</item>
+
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/md_red_500</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:elevation" tools:ignore="NewApi">@dimen/toolbar_elevation</item>
+        <item name="android:transitionName" tools:ignore="NewApi">toolbar</item>
+        <item name="popupTheme">?toolbarPopupTheme</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Toolbar.Title</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.Toolbar.Subtitle</item>
+    </style>
+
+    <style name="TextAppearance.Toolbar.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Toolbar.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

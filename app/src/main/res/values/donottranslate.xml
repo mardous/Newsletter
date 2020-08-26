@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="developers" translatable="false">Christians Martínez Alvarado</string>
+    <string name="newsapi" translatable="false">NewsAPI.org</string>
+    <string name="title_and_text_format" translatable="false"><![CDATA[<b>%s</b> • %s]]></string>
+</resources>

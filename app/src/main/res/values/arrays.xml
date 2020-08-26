@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preference_news_update_interval_entries">
+        <item>@string/every_hour</item>
+        <item>@string/every_two_hours</item>
+        <item>@string/every_five_hours</item>
+        <item>@string/every_eight_hours</item>
+        <item>@string/every_twelve_hours</item>
+        <item>@string/every_twenty_four_hours</item>
+        <item>@string/never</item>
+    </string-array>
+
+    <string-array name="preference_news_update_interval_values">
+        <item>every_hour</item>
+        <item>every_two_hours</item>
+        <item>every_five_hours</item>
+        <item>every_eight_hours</item>
+        <item>every_twelve_hours</item>
+        <item>every_twenty_four_hours</item>
+        <item>never</item>
+    </string-array>
+
+    <string-array name="preference_results_limit_entries">
+        <item>@string/ten_articles</item>
+        <item>@string/twenty_five_articles</item>
+        <item>@string/fifty_articles</item>
+        <item>@string/seventy_five_articles</item>
+        <item>@string/one_hundred_articles</item>
+    </string-array>
+
+    <string-array name="preference_results_limit_values">
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="preference_sort_search_result_by_entries">
+        <item>@string/published_at</item>
+        <item>@string/popularity</item>
+        <item>@string/relevancy</item>
+    </string-array>
+
+    <string-array name="preference_sort_search_result_by_values">
+        <item>publishedAt</item>
+        <item>popularity</item>
+        <item>relevancy</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/home_label"
+        android:icon="@drawable/ic_home_white_24dp"/>
+    <item
+        android:id="@+id/action_sources"
+        android:title="@string/sources_label"
+        android:icon="@drawable/ic_public_white_24dp"/>
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/search_label"
+        android:icon="@drawable/ic_search_white_24dp"/>
+</menu>

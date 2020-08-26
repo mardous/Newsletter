@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="PrivateResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:singleLine="true"
+            android:fadingEdge="horizontal"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:text="@string/description_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:fadingEdge="horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/app_description"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:singleLine="true"
+            android:fadingEdge="horizontal"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:text="@string/developers_title"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:fadingEdge="horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/developers"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:singleLine="true"
+            android:fadingEdge="horizontal"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:text="@string/powered_by_title"/>
+
+        <TextView
+            android:id="@+id/newsapi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:fadingEdge="horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="@string/newsapi"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+        android:shrinkColumns="0,1,2">
+
+        <TableRow
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/licenses"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/licenses_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_description_white_24dp"
+                    tools:tint="@color/ate_secondary_text_light"
+                    tools:ignore="ContentDescription"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="@string/licenses"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/email_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_mail_white_24dp"
+                    tools:tint="@color/ate_secondary_text_light"
+                    tools:ignore="ContentDescription"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="@string/email"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fork_on_github"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/fork_on_github_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_github_circle_white_24dp"
+                    tools:tint="@color/ate_secondary_text_light"
+                    tools:ignore="ContentDescription"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="@string/fork_on_github"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

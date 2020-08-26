@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/transition_image"
+            tools:ignore="ContentDescription,UnusedAttribute"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@id/image"
+            android:background="@drawable/bottom_shadow"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignBottom="@id/image"
+            android:layout_marginRight="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            tools:text="CNN • CNN Redaction"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/image"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            tools:text="Title"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/title"
+            tools:text="Description"/>
+
+        <TextView
+            android:id="@+id/extra_text"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="?android:attr/textColorSecondary"
+            tools:text="Fri, 22 Mar 2019 • 9 hour ago"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
