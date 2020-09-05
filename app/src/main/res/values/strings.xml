@@ -60,7 +60,7 @@
     <string name="action_clear">Clear</string>
     <string name="action_search">Search</string>
     <string name="search_latest_news">Search latest news</string>
-    <string name="type_more_than_two_letters">¡You must type more than two letters!</string>
+    <string name="type_more_than_two_letters">You must type more than two letters!</string>
     <string name="browser_app_is_not_installed">Browser app is not installed</string>
 
     <string name="preference_category_appearance">Appearance</string>
