@@ -1,8 +1,26 @@
+/*
+ * Copyright (c) 2020  Christians Martínez Alvarado
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package com.mardous.newsletter.gui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import butterknife.BindView;
@@ -18,7 +36,7 @@ import com.mardous.newsletter.util.Utils;
 import com.mardous.newsletter.util.pref.PrefUtil;
 
 /**
- * @author Christians Martínez Alvarado
+ * @author Christians Martínez Alvarado (mardous)
  */
 public class MainActivity extends AbsThemeActivity implements BottomNavigationView.OnNavigationItemSelectedListener,
         BottomNavigationView.OnNavigationItemReselectedListener {
@@ -63,7 +81,7 @@ public class MainActivity extends AbsThemeActivity implements BottomNavigationVi
     private void checkShowIntro() {
         if (!PrefUtil.getInstance(this).introShown()) {
             PrefUtil.getInstance(this).setIntroShown();
-            new Handler().postDelayed(() -> startActivityForResult(new Intent(this, AppIntroActivity.class), APP_INTRO_REQUEST), 50);
+            new Handler(Looper.getMainLooper()).postDelayed(() -> startActivityForResult(new Intent(this, AppIntroActivity.class), APP_INTRO_REQUEST), 50);
         }
     }
 
